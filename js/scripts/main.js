@@ -28,3 +28,19 @@ allFilters.forEach((filter, index) =>{
     filter.classList.add('active');
 })
 })
+
+const btnOpenModal = document.querySelector('.js-open-modal');
+const btnCloseModal = document.querySelector('.js-close-modal');
+console.log('fechado');
+
+btnOpenModal.addEventListener('click', (event) =>{
+  event.preventDefault();
+  let tagHtml =  document.documentElement;
+  tagHtml.classList.add('show-modal');
+})
+
+btnCloseModal.addEventListener('click', (event) =>{
+  event.preventDefault();
+  let tagHtml =  document.documentElement;
+  tagHtml.classList.remove('show-modal');
+})

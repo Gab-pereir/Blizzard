@@ -49,6 +49,34 @@ header{
             }
         }
     }
+    .btn-mobile{
+        display: none;
+    }
+    @media(max-width:991px) {
+        .left-container{
+            nav{
+                display: none;
+            }
+        }
+        .right-container{
+            .btn-mobile{
+                display: block;
+                margin-left: 8.9rem;
+            }
+        }
+    }
+    @media(max-width:560px) {
+        .left-container{
+            img{
+                max-width: 66px;
+            }
+        }
+        .right-container{
+            .btn{
+                display: none;
+            }
+        }
+    }
 }
 
 .menu{
@@ -106,5 +134,8 @@ header{
                 }
             }
         }
-    } 
+    }
+    @media(max-width:560px){
+        display: none;
+    }
 }

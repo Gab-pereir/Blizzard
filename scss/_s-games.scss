@@ -1,5 +1,4 @@
 .s-games{
-    display: none;
     padding-top: 8.5rem;
     padding-bottom: 107.3px;
     .top{
@@ -84,5 +83,45 @@
             }
         }
 
+    }
+    @media (max-width: 991px){
+        .top{
+            .left-top{
+                span{
+                    display: none;
+                }
+            }
+        }
+        .tab-games-content{
+            .tab-pane-games{
+                &.active{
+                    grid-template-columns: repeat(3, 1fr);
+                }
+            }
+        }
+    }
+    @media (max-width:560px){
+        .top{
+            .right-top{
+                justify-content: flex-end;
+                ul{
+                    display: none;
+                }
+            }
+        }
+        .tab-games-content{
+            .tab-pane-games{
+                &.active{
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-gap: 2.4rem 1.6rem;
+                }
+                .card-all-games{
+                    height: 21.2rem;
+                }
+            }
+        }
+        .info{
+            display: none;
+        }
     }
 }
